@@ -28,7 +28,7 @@ function blockOpen() {
   $('.transform').css("background-color", "darkolivegreen");
   $('.transform').animate({marginLeft:'auto'}, {duration: 9000});
 // wordMove();
-$('h1').toggle("slide").delay(1500);
+$('#title-page').toggle("slide").delay(1500);
 //maybe I could select each letter???
 
 // $('h1').animate({width: 'toggle'}, 3000);
