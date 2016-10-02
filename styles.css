@@ -61,15 +61,13 @@ body {
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.5);
+  /*border-left: 10px solid black;*/
 }
 
-nav {
-	float: left;
-}
 main {
 	float:left;
 }
+
 .dropdown-links {
 	display: none;
 }
@@ -112,6 +110,18 @@ body {
   min-height: 100%;
 }
 
+body {
+margin: 0;
+padding-bottom: 0;
+min-height: 100%;
+padding-top: 10px;
+border-top: 25px solid rgba(0, 0, 0, .5);
+border-left: 25px solid rgba(0, 0, 0, .5);
+border-right: 25px solid rgba(0, 0, 0, .5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
 wrapper {
 	margin: 0 auto;
   padding-top: 64px;
@@ -119,6 +129,10 @@ wrapper {
 }
 
 footer {
+  background-color:rgba(0, 0, 0, .5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+
 	position: absolute;
 	right: 0;
   	bottom: 0;
