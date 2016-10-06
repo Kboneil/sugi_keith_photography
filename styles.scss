@@ -43,8 +43,7 @@ header {
   text-align: center;
 
   h1 {
-    font-size: 50px;
-    margin: 10px;
+    font-size: 75px;
     #title-page {
       display: none;
       }
@@ -58,8 +57,15 @@ header {
     .block {
       margin-left: 50px;
     }
+		.transform {
+			float:left;
+		}
 
   }
+}
+
+nav {
+	clear:both;
 }
 
 footer {
