@@ -3,8 +3,9 @@ $(document).ready(function () {
 // $('.transform').prepend('<div class="block" id="transform"></div>');
 
 //nav dropdown
-$('.dropdown').on('click', function () {
+$('#dropdown').on('click', function () {
   $('.dropdown-links').slideToggle();
+  $('#dropdown').css("display", "none");
 });
 
 //form

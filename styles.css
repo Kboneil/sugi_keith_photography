@@ -35,22 +35,42 @@ body {
 
 header {
   float: left;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px; }
   header h1 {
-    font-size: 75px; }
-    header h1 #title-page {
+    font-size: 75px;
+    margin: 15px; }
+    header h1#title-page {
       display: none; }
-  header div {
+  header .block {
     background-color: black;
-    height: 75px;
-    width: 25px; }
-    header div .block {
-      margin-left: 50px; }
-    header div .transform {
-      float: left; }
+    height: 40px;
+    width: 100%; }
+  header .transform {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    float: left; }
 
 nav {
-  clear: both; }
+  padding: 10px; }
+  nav #dropdownOne, nav #dropdownTwo, nav #dropdownThree {
+    display: inline-block;
+    background-color: black;
+    height: 15px;
+    width: 5px; }
+  nav .dropdown-links {
+    display: none; }
+    nav .dropdown-links li {
+      display: inline;
+      border-left: 2px solid black;
+      padding: 0 10px 0 10px; }
+      nav .dropdown-links li:first-child {
+        border-left: none; }
 
 footer {
   position: absolute;
