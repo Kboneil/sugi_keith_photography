@@ -29,9 +29,17 @@ html {
   height: 100%;
   box-sizing: border-box; }
 
+a {
+  color: black; }
+
 body {
-  background-image: url(https://s11.postimg.org/s5lt9xkgj/Mountain.jpg);
-  background-size: cover; }
+  background: lightgray;
+  font-family: 'ABeeZee', sans-serif; }
+
+#homePage {
+  background: darkgray url(https://s11.postimg.org/s5lt9xkgj/Mountain.jpg);
+  background-size: cover;
+  font-family: 'ABeeZee', sans-serif; }
 
 header {
   float: left;
@@ -40,21 +48,21 @@ header {
   margin: auto;
   border-bottom: 2px solid black;
   padding-bottom: 10px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-bottom: 15px; }
+  header .block, header .transform {
+    background-color: black;
+    height: 35px;
+    width: 100%; }
+  header .postTransform {
+    background-color: darkolivegreen;
+    height: 35px;
+    width: 100%; }
   header h1 {
     font-size: 75px;
     margin: 15px; }
     header h1#title-page {
       display: none; }
-  header .block {
-    background-color: black;
-    height: 40px;
-    width: 100%; }
-  header .transform {
-    background-color: black;
-    height: 40px;
-    width: 100%;
-    float: left; }
 
 nav {
   padding: 10px; }
@@ -62,7 +70,7 @@ nav {
     display: inline-block;
     background-color: black;
     height: 15px;
-    width: 5px; }
+    width: 2px; }
   nav .dropdown-links {
     display: none; }
     nav .dropdown-links li {
@@ -71,6 +79,27 @@ nav {
       padding: 0 10px 0 10px; }
       nav .dropdown-links li:first-child {
         border-left: none; }
+
+main {
+  margin: auto;
+  text-align: center; }
+  main h2 {
+    font-size: 50px; }
+  main img {
+    height: 200px; }
+  main li {
+    display: inline-block;
+    margin: 20px; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 4rem;
+  min-height: 100%; }
+
+wrapper {
+  margin: 0 auto;
+  padding-top: 64px; }
 
 footer {
   position: absolute;
