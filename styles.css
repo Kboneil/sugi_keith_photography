@@ -34,12 +34,12 @@ a {
 
 body {
   background: lightgray;
-  font-family: 'ABeeZee', sans-serif; }
+  font-family: 'Poiret One', cursive; }
 
 #homePage {
   background: darkgray url(https://s11.postimg.org/s5lt9xkgj/Mountain.jpg);
   background-size: cover;
-  font-family: 'ABeeZee', sans-serif; }
+  font-family: 'Poiret One', cursive; }
 
 header {
   float: left;
@@ -85,8 +85,11 @@ main {
   text-align: center; }
   main h2 {
     font-size: 50px; }
+  main .mySlides img {
+    height: 500px; }
   main img {
-    height: 200px; }
+    height: 200px;
+    margin-bottom: 15px; }
   main li {
     display: inline-block;
     margin: 20px; }

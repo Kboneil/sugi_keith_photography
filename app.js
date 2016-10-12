@@ -13,7 +13,7 @@ $('#contactForm').on('submit', function(event){
   event.preventDefault();
 $('#contactForm').find('input[type=text],[type=email]').val('');
 })
-
+$('.mySlides').css("display", "none");
 headerMove();
 });
 
@@ -25,22 +25,23 @@ function headerMove() {
 }
 
 function blockOpen() {
-
   $('.transform').css("background-color", "darkolivegreen");
-  $('.transform').animate({marginLeft:'auto'}, {duration: 9000});
-// wordMove();
-$('#title-page').toggle("slide").delay(1500);
-//maybe I could select each letter???
-
-// $('h1').animate({width: 'toggle'}, 3000);
-// $('h1').show('slide', {direction: 'left'}, 2000);
+  $('#title-page').toggle("slide").delay(1500);
+  $('.mySlides').css("display", "block");
+  carousel();
 }
-// var header;
-//
-// function wordMove() {
-//   header = setTimeout(title, 2000);
-// }
-//
-// function title() {
-//   $('h1').animate({width: 'toggle'});
-// }
+
+picArray = [];
+var slideIndex = 0;
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    // picArray.push(x);
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}

@@ -38,14 +38,13 @@ a {
 
 body {
 	background: lightgray;
-	// font-family: 'ABeeZee', sans-serif;
 	font-family: 'Poiret One', cursive;
 }
 
 #homePage {
 	background: darkgray url(https://s11.postimg.org/s5lt9xkgj/Mountain.jpg);
 	background-size: cover;
-	font-family: 'ABeeZee', sans-serif;
+	font-family: 'Poiret One', cursive;
 }
 
 
@@ -107,9 +106,12 @@ main {
 	h2 {
 		font-size: 50px;
 	}
+	.mySlides img{
+		height: 500px;
+	}
 	img {
 		height: 200px;
-
+		margin-bottom: 15px;
 	}
 		li{
 		display: inline-block;
