@@ -119,6 +119,80 @@ main {
 	}
 }
 
+
+form {
+	width: 350px;
+	margin: auto;
+	padding: 15px;
+	h3{
+		font-size: 20px;
+	}
+
+.form {
+		background: lightgray;
+		border: none;
+		border-bottom: 1px solid darkolivegreen;
+		width: 300px;
+		height: 35px;
+		font-size: 20px;
+		margin: 15px;
+		font-family: 'Poiret One', cursive;
+		&#message{
+			height: 150px;
+			width: 300px;
+			resize: none
+		}
+		&#message::-moz-placeholder {
+		  line-height:255px;
+			}
+		&#message::-webkit-input-placeholder {
+		  line-height:255px;
+			}
+		&#message:-ms-input-placeholder {
+			line-height:255px;
+			}
+	}
+
+	.form:focus {
+		outline: none;
+		border-bottom: 3px solid darkolivegreen;
+	}
+
+	.form:invalid {
+  color: #660000;
+	}
+
+	button:focus{
+		outline: none;
+		font-size: 25px;
+	}
+	button{
+		display:none;
+		background-color: lightgray;
+		border: none;
+		font-family: 'Poiret One', cursive;
+		font-size: 20px;
+	}
+}
+
+form:hover {
+	button {
+		margin:auto;
+		display:block;
+	}
+}
+
+#aboutPara{
+	padding: 15px;
+	width: 400px;
+	margin: auto;
+	p{
+		margin: 15px;
+	}
+	img {
+		width: 370px;
+	}
+}
 body {
   position: relative;
   margin: 0;

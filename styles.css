@@ -94,6 +94,59 @@ main {
     display: inline-block;
     margin: 20px; }
 
+form {
+  width: 350px;
+  margin: auto;
+  padding: 15px; }
+  form h3 {
+    font-size: 20px; }
+  form .form {
+    background: lightgray;
+    border: none;
+    border-bottom: 1px solid darkolivegreen;
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    margin: 15px;
+    font-family: 'Poiret One', cursive; }
+    form .form#message {
+      height: 150px;
+      width: 300px;
+      resize: none; }
+    form .form#message::-moz-placeholder {
+      line-height: 255px; }
+    form .form#message::-webkit-input-placeholder {
+      line-height: 255px; }
+    form .form#message:-ms-input-placeholder {
+      line-height: 255px; }
+  form .form:focus {
+    outline: none;
+    border-bottom: 3px solid darkolivegreen; }
+  form .form:invalid {
+    color: #660000; }
+  form button:focus {
+    outline: none;
+    font-size: 25px; }
+  form button {
+    display: none;
+    background-color: lightgray;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px; }
+
+form:hover button {
+  margin: auto;
+  display: block; }
+
+#aboutPara {
+  padding: 15px;
+  width: 400px;
+  margin: auto; }
+  #aboutPara p {
+    margin: 15px; }
+  #aboutPara img {
+    width: 370px; }
+
 body {
   position: relative;
   margin: 0;

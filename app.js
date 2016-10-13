@@ -11,7 +11,7 @@ $('#dropdown').on('click', function () {
 //form
 $('#contactForm').on('submit', function(event){
   event.preventDefault();
-$('#contactForm').find('input[type=text],[type=email]').val('');
+$('#contactForm').find('input[type=text],[type=email],textarea').val('');
 })
 $('.mySlides').css("display", "none");
 headerMove();
@@ -43,5 +43,5 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 5000); // Change image every 2 seconds
+    setTimeout(carousel, 3500); // Change image every 2 seconds
 }
