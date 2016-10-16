@@ -79,6 +79,12 @@ nav {
       padding: 0 10px 0 10px; }
       nav .dropdown-links li:first-child {
         border-left: none; }
+  nav .links li {
+    display: inline;
+    border-left: 2px solid black;
+    padding: 0 10px 0 10px; }
+    nav .links li:first-child {
+      border-left: none; }
 
 main {
   margin: auto;

@@ -89,6 +89,18 @@ nav{
 
 .dropdown-links{
 	display: none;
+	li {
+	display: inline;
+	border-left: 2px solid black;
+	padding: 0 10px 0 10px;
+ &:first-child {
+		border-left: none;
+	}
+}
+}
+
+
+.links{
 	 li {
  	 display: inline;
  	 border-left: 2px solid black;
@@ -96,10 +108,9 @@ nav{
  	&:first-child {
  		 border-left: none;
  	 }
- }
 }
 }
-
+}
 main {
 	margin: auto;
 	text-align: center;
