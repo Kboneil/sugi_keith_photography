@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 //nav dropdown
 $('#dropdown').on('click', function () {
-  $('.dropdown-links').slideToggle();
+  $('.dropdown-links').slideToggle("slow");
   $('#dropdown').css("display", "none");
 });
 
@@ -26,7 +26,7 @@ function headerMove() {
 
 function blockOpen() {
   $('.transform').css("background-color", "darkolivegreen");
-  $('#title-page').toggle("slide").delay(1500);
+  $('#title-page').toggle("slow").delay(3000);
   $('.mySlides').css("display", "block");
   carousel();
 }
