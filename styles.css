@@ -34,12 +34,12 @@ a {
 
 body {
   background: lightgray;
-  font-family: 'Poiret One', cursive; }
+  font-family: "Poiret One", cursive; }
 
 #homePage {
   background: darkgray url(images/background.jpg);
   background-size: cover;
-  font-family: 'Poiret One', cursive; }
+  font-family: "Poiret One", cursive; }
 
 header {
   float: left;
@@ -123,7 +123,7 @@ form {
     height: 35px;
     font-size: 20px;
     margin: 15px;
-    font-family: 'Poiret One', cursive; }
+    font-family: "Poiret One", cursive; }
     form .form#message {
       height: 150px;
       width: 300px;
@@ -146,7 +146,7 @@ form {
     display: none;
     background-color: lightgray;
     border: none;
-    font-family: 'Poiret One', cursive;
+    font-family: "Poiret One", cursive;
     font-size: 20px; }
 
 form:hover button {

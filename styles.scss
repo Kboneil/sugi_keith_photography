@@ -1,4 +1,6 @@
 @import 'reset';
+$font:'Poiret One', cursive;
+$border: 2px solid black;
 
 a {
 	color: black;
@@ -6,13 +8,13 @@ a {
 
 body {
 	background: lightgray;
-	font-family: 'Poiret One', cursive;
+	font-family: $font;
 }
 
 #homePage {
 	background: darkgray url(images/background.jpg);
 	background-size: cover;
-	font-family: 'Poiret One', cursive;
+	font-family: $font;
 }
 
 
@@ -21,7 +23,7 @@ header {
   text-align: center;
 	width: 100%;
 	margin: auto;
-	border-bottom: 2px solid black;
+	border-bottom: $border;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	margin-bottom: 15px;
@@ -59,7 +61,7 @@ nav{
 	display: none;
 	li {
 	display: inline;
-	border-left: 2px solid black;
+	border-left: $border;
 	padding: 0 10px 0 10px;
  &:first-child {
 		border-left: none;
@@ -71,7 +73,7 @@ nav{
 .links{
 	 li {
  	 display: inline;
- 	 border-left: 2px solid black;
+ 	 border-left: $border;
 	 padding: 0 10px 0 10px;
  	&:first-child {
  		 border-left: none;
@@ -94,7 +96,13 @@ main {
 		box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 	}
 	#featured-images img:hover {
-		position: relative; z-index: 999; -o-transform: scale(1.03,1.03); -ms-transform: scale(1.03,1.03); -moz-transform: scale(1.03,1.03); -webkit-transform: scale(1.03,1.03); transform: scale(1.03,1.03);
+		position: relative;
+		z-index: 999;
+		-o-transform: scale(1.03,1.03);
+		-ms-transform: scale(1.03,1.03);
+		-moz-transform: scale(1.03,1.03);
+		-webkit-transform: scale(1.03,1.03);
+		transform: scale(1.03,1.03);
 	}
 		li{
 		display: inline-block;
@@ -119,7 +127,7 @@ form {
 		height: 35px;
 		font-size: 20px;
 		margin: 15px;
-		font-family: 'Poiret One', cursive;
+		font-family: $font;
 		&#message{
 			height: 150px;
 			width: 300px;
@@ -153,7 +161,7 @@ form {
 		display:none;
 		background-color: lightgray;
 		border: none;
-		font-family: 'Poiret One', cursive;
+		font-family: $font;
 		font-size: 20px;
 	}
 }

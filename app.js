@@ -1,20 +1,20 @@
 $(document).ready(function () {
 
-// $('.transform').prepend('<div class="block" id="transform"></div>');
+  // $('.transform').prepend('<div class="block" id="transform"></div>');
 
-//nav dropdown
-$('#dropdown').on('click', function () {
-  $('.dropdown-links').slideToggle("slow");
-  $('#dropdown').css("display", "none");
-});
+  //nav dropdown
+  $('#dropdown').on('click', function () {
+    $('.dropdown-links').slideToggle("slow");
+    $('#dropdown').css("display", "none");
+  });
 
-//form
-$('#contactForm').on('submit', function(event){
-  event.preventDefault();
-$('#contactForm').find('input[type=text],[type=email],textarea').val('');
-})
-$('.mySlides').css("display", "none");
-headerMove();
+  //form
+  $('#contactForm').on('submit', function(event){
+    event.preventDefault();
+    $('#contactForm').find('input[type=text],[type=email],textarea').val('');
+  });
+  $('.mySlides').css('display', 'none');
+  headerMove();
 });
 
 //header movement
@@ -34,14 +34,14 @@ function blockOpen() {
 picArray = [];
 var slideIndex = 0;
 function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    // picArray.push(x);
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 3500); // Change image every 2 seconds
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  // picArray.push(x);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3500); // Change image every 2 seconds
 }
